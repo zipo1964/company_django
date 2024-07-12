@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'custom.css'%}" type="text/css">
+  
+</head>
+<body>
+    {% comment %} <h1>Hello World</h1>
+    <h2>My name is {{ user.name}}</h2>
+    <h2>My email is {{ user.email}}</h2>
+    <p>{{ course_title | lower}}</p>
+    <p>Today's date: {{current_date | date:"F j, Y"}}</p>
+    <p>{{ product_price | floatformat:2}}</p>
+    <p>{{ random_text | truncatechars:10}}</p> {% endcomment %}
+    {% comment %} {% for fruit in fruits %}
+        <h1>{{fruit}}</h1>
+    {% endfor %} {% endcomment %}
+     {% comment %} {% for product in products %}
+        <h2>{{ product.name}} {{product.price}}</h2>
+     {% endfor %} {% endcomment %}
+
+     {% comment %} {% if can_display_names == True %}
+        {% for name in names %}
+         <h1>{{ name}}</h1>
+        {% endfor %}  
+     {% endif %} {% endcomment %}
+
+     {% for product in products %}
+     {% if product.price >= price_limit %}
+     <h1>{{ product.name}} {{product.price}}</h1>
+     {% endif %}
+     {% endfor %}
+     
+</body>
+</html>

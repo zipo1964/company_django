@@ -1,0 +1,9 @@
+asgiref==3.8.1
+certifi==2024.7.4
+Django==5.0
+django-ckeditor==6.7.1
+django-decouple==2.1
+django-js-asset==2.2.0
+sqlparse==0.5.0
+tzdata==2024.1
+whitenoise==6.6.0
